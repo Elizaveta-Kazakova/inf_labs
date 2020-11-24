@@ -1,0 +1,29 @@
+elizaveta@elizaveta-VirtualBox:~/Documents$ mkdir mydirectory
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls
+crusoe.txt  directory  file1.txt  mydirectory  new_crusoe.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ touch myfile1.txt myfile2.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls
+crusoe.txt  file1.txt    myfile1.txt  new_crusoe.txt
+directory   mydirectory  myfile2.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ cp myfile1.txt mydirectory
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls mydirectory
+myfile1.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ mv myfile2.txt mydirectory
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls mydirectory
+myfile1.txt  myfile2.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls
+crusoe.txt  directory  file1.txt  mydirectory  myfile1.txt  new_crusoe.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ mv mydirectory ~/Desktop
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls ~/Desktop/mydirectory
+myfile1.txt  myfile2.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ rm -r ~/Desktop/mydirectory
+elizaveta@elizaveta-VirtualBox:~/Documents$ pwd
+/home/elizaveta/Documents
+elizaveta@elizaveta-VirtualBox:~/Documents$ cd
+elizaveta@elizaveta-VirtualBox:~$ cd Documents
+elizaveta@elizaveta-VirtualBox:~/Documents$ cat file1.txt
+Hello world!
+elizaveta@elizaveta-VirtualBox:~/Documents$ more file1.txt
+Hello world!
+elizaveta@elizaveta-VirtualBox:~/Documents$ less file1.txt
+
