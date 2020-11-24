@@ -1,0 +1,14 @@
+elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo friday crusoe.txt | wc -w
+183
+elizaveta@elizaveta-VirtualBox:~/Documents$ sed -i s/Friday/Saturday/Ig crusoe.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo friday crusoe.txt | wc -w
+0
+elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo Saturday crusoe.txt | wc -w
+183
+elizaveta@elizaveta-VirtualBox:~/Documents$ cat test.txt | awk {sum1+=} {sum2+=} END {print sum1   sum2}
+6 11
+elizaveta@elizaveta-VirtualBox:~/Documents$ cat test.txt
+1 2
+2 2
+3 7
+
