@@ -1,0 +1,51 @@
+elizaveta@elizaveta-VirtualBox:~/Documents$ touch .file
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls
+crusoe.txt  directory  directory2  myfile1.txt  test.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ ls -a
+.  ..  crusoe.txt  directory  directory2  .file  myfile1.txt  test.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ cd
+elizaveta@elizaveta-VirtualBox:~$ ls -a
+.              .gitconfig        .sudo_as_admin_successful
+..             .gnupg            Templates
+.bash_history  .lesshst          .vboxclient-clipboard.pid
+.bash_logout   .local            .vboxclient-display-svga-x11.pid
+.bashrc        .mozilla          .vboxclient-draganddrop.pid
+.cache         Music             .vboxclient-seamless.pid
+.config        Pictures          Videos
+Desktop        .profile          .viminfo
+Documents      Public
+Downloads      .selected_editor
+elizaveta@elizaveta-VirtualBox:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+elizaveta@elizaveta-VirtualBox:~$ find -type f -name ".*"
+./.bash_logout
+./Documents/.file
+./.vboxclient-seamless.pid
+./.gitconfig
+./.bashrc
+./.bash_history
+./.lesshst
+./.vboxclient-display-svga-x11.pid
+./.sudo_as_admin_successful
+./.vboxclient-draganddrop.pid
+./.selected_editor
+./.profile
+./.vboxclient-clipboard.pid
+./.mozilla/firefox/52cpapwd.default-release/.parentlock
+./.mozilla/firefox/52cpapwd.default-release/storage/default/https+++vk.com/.metadata-v2
+./.mozilla/firefox/52cpapwd.default-release/storage/default/https+++vk.com/cache/.padding
+./.mozilla/firefox/52cpapwd.default-release/storage/default/https+++www.google.com/.metadata-v2
+./.mozilla/firefox/52cpapwd.default-release/storage/default/https+++www.youtube.com/.metadata-v2
+./.mozilla/firefox/52cpapwd.default-release/storage/default/https+++losst.ru/.metadata-v2
+./.mozilla/firefox/52cpapwd.default-release/storage/default/moz-extension+++31817cb3-dc54-4786-b954-87c556409af8^userContextId=4294967295/.metadata-v2
+./.mozilla/firefox/52cpapwd.default-release/storage/permanent/chrome/.metadata-v2
+./.viminfo
+elizaveta@elizaveta-VirtualBox:~$ find -type d -name ".*"
+.
+./.config
+./.cache
+./.gnupg
+./.local
+./Desktop/inf_labs/.git
+./.mozilla
+
