@@ -1,6 +1,6 @@
 elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo friday crusoe.txt | wc -w
 183
-elizaveta@elizaveta-VirtualBox:~/Documents$ sed -i s/Friday/Saturday/Ig crusoe.txt
+elizaveta@elizaveta-VirtualBox:~/Documents$ sed -i 's/Friday/Saturday/Ig' crusoe.txt
 elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo friday crusoe.txt | wc -w
 0
 elizaveta@elizaveta-VirtualBox:~/Documents$ grep -iwo Saturday crusoe.txt | wc -w
