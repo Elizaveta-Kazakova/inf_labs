@@ -1,0 +1,28 @@
+elizaveta@elizaveta-VirtualBox:~$ which cat less grep find
+/usr/bin/cat
+/usr/bin/less
+/usr/bin/grep
+/usr/bin/find
+elizaveta@elizaveta-VirtualBox:~$ whereis  cat less grep find
+cat: /usr/bin/cat /usr/share/man/man1/cat.1.gz
+less: /usr/bin/less /usr/share/man/man1/less.1.gz
+grep: /usr/bin/grep /usr/share/man/man1/grep.1.gz /usr/share/info/grep.info.gz
+find: /usr/bin/find /usr/share/man/man1/find.1.gz /usr/share/info/find.info-1.gz /usr/share/info/find.info-2.gz /usr/share/info/find.info.gz
+elizaveta@elizaveta-VirtualBox:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+elizaveta@elizaveta-VirtualBox:~$ gcc helloworld.c -o helloworld
+elizaveta@elizaveta-VirtualBox:~$ ./helloworld
+Hello world!
+elizaveta@elizaveta-VirtualBox:~$ ls
+Desktop    helloworld    new_directory  Pictures   Videos
+Documents  helloworld.c  numbers        Public
+Downloads  Music         numbers.c      Templates
+elizaveta@elizaveta-VirtualBox:~$ cd new_directory
+elizaveta@elizaveta-VirtualBox:~/new_directory$ gcc ~/helloworld.c -o helloworldelizaveta@elizaveta-VirtualBox:~/new_directory$ ls
+helloworld
+elizaveta@elizaveta-VirtualBox:~/new_directory$ ./helloworld
+Hello world!
+elizaveta@elizaveta-VirtualBox:~/new_directory$ export PATH=$PATH:~/new_directory
+elizaveta@elizaveta-VirtualBox:~/new_directory$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/elizaveta/new_directory
+

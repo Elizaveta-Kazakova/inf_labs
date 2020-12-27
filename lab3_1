@@ -1,0 +1,57 @@
+elizaveta@elizaveta-VirtualBox:~$ ping -c 3 ya.ru
+PING ya.ru (87.250.250.242) 56(84) bytes of data.
+64 bytes from ya.ru (87.250.250.242): icmp_seq=1 ttl=246 time=76.0 ms
+64 bytes from ya.ru (87.250.250.242): icmp_seq=3 ttl=246 time=109 ms
+
+--- ya.ru ping statistics ---
+3 packets transmitted, 2 received, 33,3333% packet loss, time 2019ms
+rtt min/avg/max/mdev = 75.959/92.517/109.075/16.558 ms
+elizaveta@elizaveta-VirtualBox:~$  traceroute -I ya.ru
+traceroute to ya.ru (87.250.250.242), 30 hops max, 60 byte packets
+ 1  _gateway (10.0.2.2)  0.496 ms  0.469 ms  0.462 ms
+ 2  192.168.3.1 (192.168.3.1)  7.187 ms  7.238 ms  8.436 ms
+ 3  10.3.50.1 (10.3.50.1)  11.283 ms  11.277 ms  11.272 ms
+ 4  host3.49.237.84.nsu.ru (84.237.49.3)  11.266 ms  11.117 ms  11.096 ms
+ 5  host130.49.237.84.nsu.ru (84.237.49.130)  11.079 ms  10.991 ms  11.003 ms
+ 6  host-95-170-130-185.avantel.ru (95.170.130.185)  10.943 ms  4.574 ms  4.710 ms
+ 7  aurora.yndx.net (194.226.100.90)  58.727 ms  58.058 ms  58.246 ms
+ 8  sas-32z6-lag-1-1.yndx.net (87.250.239.205)  64.768 ms  67.673 ms  68.982 ms
+ 9  * * *
+10  ya.ru (87.250.250.242)  64.006 ms  64.041 ms  64.019 ms
+elizaveta@elizaveta-VirtualBox:~$ dig ya.ru
+
+; <<>> DiG 9.16.1-Ubuntu <<>> ya.ru
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 43574
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;ya.ru.INA
+
+;; ANSWER SECTION:
+ya.ru.199INA87.250.250.242
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Ср дек 09 00:17:35 +07 2020
+;; MSG SIZE  rcvd: 50
+
+elizaveta@elizaveta-VirtualBox:~$ nslookup ya.ru
+Server:127.0.0.53
+Address:127.0.0.53#53
+
+Non-authoritative answer:
+Name:ya.ru
+Address: 87.250.250.242
+Name:ya.ru
+Address: 2a02:6b8::2:242
+
+elizaveta@elizaveta-VirtualBox:~$ dig yandex.ru +short
+5.255.255.60
+77.88.55.60
+77.88.55.66
+5.255.255.55
+
